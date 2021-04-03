@@ -1,3 +1,13 @@
+# Peak in a 1D list is an element that is NOT LESS THAN any of it's neighbours.
+# For elements at the corners, the single neighbour is considered.
+# This algorithm returns the index of peak of a given list of numbers (a peak always exists)
+# Note that this may not be the global peak/maxima, only local
+# Example: [1, 4, 8, 3, 9, 5]
+# Naive --> 2, Recursive --> 2
+# Example: [1, 19, 4, 2, 7, 10, 14, 13, 18]
+# Naive --> 1, Recursive --> 6
+
+
 # O(n), naive search through all elements
 def naive_pf(arr):
     n = len(arr)
@@ -35,7 +45,7 @@ def recursive_peak(arr, low, high, n):
 
 # List must not have adjacent equal elements
 def main():
-    example_list = [2, 5, 7, 8, 16, 13, 11, 10, 9]
+    example_list = [1, 19, 4, 2, 7, 10, 14, 13, 18]
     n = len(example_list)
 
     print(example_list)
