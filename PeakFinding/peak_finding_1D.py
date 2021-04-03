@@ -4,7 +4,7 @@
 # Note that this may not be the global peak/maxima, only local
 # Example: [1, 4, 8, 3, 9, 5]
 # Naive --> 2, Recursive --> 2
-# Example: [1, 19, 4, 2, 7, 10, 14, 13, 18]
+# Example: [1, 19, 4, 2, 7, 10, 14, 13, 4]
 # Naive --> 1, Recursive --> 6
 
 
@@ -45,11 +45,12 @@ def recursive_peak(arr, low, high, n):
 
 # List must not have adjacent equal elements
 def main():
-    example_list = [1, 19, 4, 2, 7, 10, 14, 13, 18]
+    example_list = [1, 19, 4, 2, 7, 10, 14, 13, 4]
     n = len(example_list)
 
     print(example_list)
-    print("Peak index =", recursive_peak(example_list, 0, n - 1, n))
+    print("Peak index using Naive algorithm =", naive_pf(example_list))
+    print("Peak index using Recursive algorithm =", recursive_peak(example_list, 0, n - 1, n))
 
 
 if __name__ == '__main__':
