@@ -1,6 +1,6 @@
-# Peak in a 1D list is an element that is NOT LESS THAN any of it's neighbours.
+# Peak in a 1D arr is an element that is NOT LESS THAN any of it's neighbours.
 # For elements at the corners, the single neighbour is considered.
-# This algorithm returns the index of peak of a given list of numbers (a peak always exists)
+# This algorithm returns the index of peak of a given arr of numbers (a peak always exists)
 # Note that this may not be the global peak/maxima, only local
 # Example: [1, 4, 8, 3, 9, 5]
 # Naive --> 2, Recursive --> 2
